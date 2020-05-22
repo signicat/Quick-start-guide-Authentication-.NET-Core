@@ -20,7 +20,6 @@ dotnet add . package Microsoft.AspNetCore.Authentication.OpenIdConnect
 ```
 
 ## Edit Startup.cs
-
 Near the top of the file, add the following using statements:
 
 ```dotnet
@@ -105,8 +104,19 @@ endpoints.MapGet("/", async context =>
 }).RequireAuthorization();
 ```
 
-#### Run the code
+## Run the code
 ```dotnet
 dotnet run
 ```
-Open http://localhost:5000/ in a browser
+
+## Try it!
+Your local server should now be up and running. Open http://localhost:5000/ in your browser and select Norwegian BankID. Remember to use the test credentials below when identifying.
+
+### Norwegian BankID test credentials
+Norwegian BankID test user information
+
+| Description              | Value         |
+| :----------------------- | :------------ |
+| User ID                  | 10103933108   |
+| One time password (OTP)  | otp           |
+| Password                 | qwer1234      |
